@@ -28,7 +28,7 @@ Parserを使ってのスクレイピングは、あくまでも文字列操作�
 # API出力
 スプレッドシートに書き込まれたデータを読み込んで、getリクエストに応じてJSONを返す  
 
-```
+```doGet.js
 function doGet(e) {
   key = e.parameter.key
 
@@ -42,7 +42,7 @@ function doGet(e) {
 # デプロイ
 処理が完成したら、画面右上にあるデプロイ処理をする  
 新しいデプロイ→種類の選択→ウェブアプリ→アクセスできるユーザー→全員  
-```
+```url
 https://script.google.com/macros/s/AKfycbz49-g39n3pAoHJiFriwJbtTKP4T0Q_y8u_d699qjwP0qCxGa0BmJyDV1SVBoKRfQq2/exec?key=all
 ```
 exec?key=にAPI要求も文字列を記述すれば、該当の番組情報JSONを返す
@@ -53,3 +53,6 @@ exec?key=にAPI要求も文字列を記述すれば、該当の番組情報JSON�
 `ag12000　（ag + 曜日 + 時間）`  
 全番組：`all`と記述  
 放送中番組：`now`と記述  
+
+# コード
+あまり綺麗なコードではないが、どなたか利用するようでしたら参考にしてください  [Github](https://github.com/hagasewa/ag-program-api)
