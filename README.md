@@ -54,5 +54,3 @@ exec?key=にAPI要求も文字列を記述すれば、該当の番組情報JSON�
 全番組：`all`と記述  
 放送中番組：`now`と記述  
 
-# コード
-あまり綺麗なコードではないが、どなたか利用するようでしたら参考にしてください  [Github](https://github.com/hagasewa/ag-program-api)
